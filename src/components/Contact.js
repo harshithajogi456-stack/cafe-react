@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Import Link
 import "../assets/style.css"; // Make sure style.css is in src/assets
 
 const Contact = () => {
 
   // Function to handle button click
   const submitContactForm = () => {
-    alert("Message sent!"); // You can replace this with actual form handling
+    alert("Message sent!"); // Replace with actual form handling if needed
   };
 
   return (
@@ -13,11 +14,11 @@ const Contact = () => {
       <header>
         <h1>Manipal Mug ☕</h1>
         <nav>
-          <a href="/">Home</a>
-          <a href="/about">About</a>
-          <a href="/menu">Menu</a>
-          <a href="/location">Location & Hours</a>
-          <a href="/contact">Contact</a>
+          <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
+          <Link to="/menu">Menu</Link>
+          <Link to="/location">Location & Hours</Link>
+          <Link to="/contact">Contact</Link>
         </nav>
       </header>
 

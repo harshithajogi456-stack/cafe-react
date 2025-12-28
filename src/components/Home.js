@@ -1,34 +1,28 @@
 import React, { useEffect } from "react";
-import "../assets/style.css"; // Make sure your CSS is in src/assets
+import { Link } from "react-router-dom"; // Import Link
+import "../assets/style.css";
 
 const Home = () => {
-
-  // Equivalent of body onload
   useEffect(() => {
-    showWelcome();
-  }, []);
-
-  // Function that runs on page load
-  const showWelcome = () => {
     alert("Welcome to Manipal Mug ☕!");
-  };
+  }, []);
 
   return (
     <div>
       <header>
         <h1>Manipal Mug ☕</h1>
         <nav>
-          <a href="/">Home</a>
-          <a href="/about">About</a>
-          <a href="/menu">Menu</a>
-          <a href="/location">Location & Hours</a>
-          <a href="/contact">Contact</a>
+          <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
+          <Link to="/menu">Menu</Link>
+          <Link to="/location">Location & Hours</Link>
+          <Link to="/contact">Contact</Link>
         </nav>
       </header>
 
       <section className="hero">
         <img
-          src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085"
+          src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80"
           alt="Cafe Interior"
         />
         <h2>Brewed for campus life</h2>

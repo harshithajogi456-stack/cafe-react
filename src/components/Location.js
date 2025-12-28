@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../assets/style.css"; // make sure your CSS is in src/assets
 
 const Location = () => {
@@ -7,11 +8,11 @@ const Location = () => {
       <header>
         <h1>Manipal Mug ☕</h1>
         <nav>
-          <a href="/">Home</a>
-          <a href="/about">About</a>
-          <a href="/menu">Menu</a>
-          <a href="/location">Location & Hours</a>
-          <a href="/contact">Contact</a>
+          <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
+          <Link to="/menu">Menu</Link>
+          <Link to="/location">Location & Hours</Link>
+          <Link to="/contact">Contact</Link>
         </nav>
       </header>
 

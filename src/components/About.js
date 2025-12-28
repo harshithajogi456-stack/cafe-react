@@ -1,5 +1,6 @@
 import React from "react";
-import "../assets/style.css"; // import CSS
+import { Link } from "react-router-dom"; // Import Link
+import "../assets/style.css"; // Make sure CSS is in src/assets
 
 const About = () => {
   return (
@@ -7,11 +8,11 @@ const About = () => {
       <header>
         <h1>Manipal Mug ☕</h1>
         <nav>
-          <a href="/">Home</a>
-          <a href="/about">About</a>
-          <a href="/menu">Menu</a>
-          <a href="/location">Location & Hours</a>
-          <a href="/contact">Contact</a>
+          <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
+          <Link to="/menu">Menu</Link>
+          <Link to="/location">Location & Hours</Link>
+          <Link to="/contact">Contact</Link>
         </nav>
       </header>
 
@@ -20,6 +21,7 @@ const About = () => {
         <img
           src={require("../assets/images/coffee.jpg")}
           alt="Cafe Coffee"
+          style={{ maxWidth: "100%", height: "auto" }}
         />
         <p>
           Manipal Mug is a student-friendly café created with the vibrant campus
